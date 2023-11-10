@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.square {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+.color-pick {
+  display: flex;
+  background-color: rgb(77, 81, 85);
+  width: 130px;
+  height: 80px;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 3%;
+  color: aliceblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 60%;
+  transition: 1s ease;
+}
+
+.color-pick:hover {
+  opacity: 100%;
+  background-color: transparent;
+}
+.color-pick input {
+  background-color: transparent;
+  border: none;
+}
+.color-pick button {
+  background-color: rgb(43, 108, 155);
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+}
